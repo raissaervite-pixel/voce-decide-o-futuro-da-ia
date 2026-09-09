@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você Decide o Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section id="inicio" class="tela">
+            <h1>🤖 Você Decide o Futuro da IA</h1>
+
+            <p>
+                Uma nova inteligência artificial acabou de ser criada.
+                Ela consegue responder perguntas, criar imagens e produzir
+                áudios extremamente realistas.
+            </p>
+
+            <p>
+                Você acabou de sair da escola e recebe acesso a essa tecnologia.
+                Qual é o seu primeiro pensamento?
+            </p>
+
+            <div class="botoes">
+                <button onclick="escolherInicio('assustador')">
+                    😨 Isso é assustador!
+                </button>
+
+                <button onclick="escolherInicio('maravilhoso')">
+                    🤩 Isso é maravilhoso!
+                </button>
+            </div>
+        </section>
+
+
+        <section id="pergunta2" class="tela escondida">
+            <h2>A inteligência artificial oferece ajuda</h2>
+
+            <p>
+                A IA diz que pode ajudar você nos estudos e fazer trabalhos
+                muito mais rapidamente.
+            </p>
+
+            <p>O que você decide?</p>
+
+            <div class="botoes">
+                <button onclick="escolherPergunta2('usar')">
+                    💻 Vou usar para me ajudar.
+                </button>
+
+                <button onclick="escolherPergunta2('naoUsar')">
+                    🧠 Prefiro fazer sozinho.
+                </button>
+            </div>
+        </section>
+
+
+        <section id="pergunta3" class="tela escondida">
+            <h2>Uma decisão importante</h2>
+
+            <p>
+                A IA começa a ficar cada vez mais poderosa.
+                Agora ela pode tomar algumas decisões sozinha.
+            </p>
+
+            <p>O que você acha que deveria acontecer?</p>
+
+            <div class="botoes">
+                <button onclick="escolherPergunta3('controle')">
+                    🛡️ A IA precisa ter limites.
+                </button>
+
+                <button onclick="escolherPergunta3('liberdade')">
+                    🚀 A IA deve ter mais liberdade.
+                </button>
+            </div>
+        </section>
+
+
+        <section id="resultado" class="tela escondida">
+            <h2>📖 O seu futuro</h2>
+
+            <div id="historia"></div>
+
+            <button class="reiniciar" onclick="reiniciar()">
+                🔄 Começar novamente
+            </button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
